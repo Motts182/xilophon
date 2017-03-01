@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AudiosPlay : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    AudioSource audio;
+    // Use this for initialization
+    void Start () {
+        audio = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    public void PlaySound() {
+        audio.Play();
+    }
 }
